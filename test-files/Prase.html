@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="http://www.parsecdn.com/js/parse-1.4.2.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+
+
+  </head>
+  <body>
+    <div id="form">
+    
+    <div class="header">
+      <div class="hero">
+        <h1>
+          Team
+          <br />
+          Checklist
+        </h1>
+        <!--
+        <h2>
+          Manager's Name
+        </h2>
+        -->
+      </div>
+
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default orange">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+              <a href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Pre Shift
+              </a>
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+            <ul class="list-group resize">
+              <!--<li class="list-group-item ">
+                <span class="pull-left checkbox glyphicon glyphicon-one-fine-empty-dot" data-task="task1"></span>
+                <div class="pull-left text">
+                  Complete pre-shift checklist
+                </div>
+                
+                  <div class="pull-right readMore">
+                    <span class="glyphicon glyphicon-menu-right"></span>
+                  </div>
+                
+              </li>-->
+              <li class="list-group-item ">
+                <span class="pull-left checkbox glyphicon glyphicon-one-fine-empty-dot" data-task="task1"></span>
+                <div class="pull-left text">Have I completed my pre-shift checklist?</div>
+              </li>
+              <li class="list-group-item ">
+                <span class="pull-left checkbox glyphicon glyphicon-one-fine-empty-dot" data-task="task2"></span>
+                <div class="pull-left text">Has anyone called in sick?</div>
+              </li>
+              <li class="list-group-item ">
+                <span class="pull-left checkbox glyphicon glyphicon-one-fine-empty-dot" data-task="task3"></span>
+                <div class="pull-left text">Is there enough stock to last through my shift?</div>
+              </li>
+              <li class="list-group-item ">
+                <span class="pull-left checkbox glyphicon glyphicon-one-fine-empty-dot" data-task="task4"></span>
+                <div class="pull-left text">Have I assigned the cleaning task for my shift?</div>
+              </li>
+              <li class="list-group-item ">
+                <span class="pull-left checkbox glyphicon glyphicon-one-fine-empty-dot" data-task="task5"></span>
+                <div class="pull-left text">Are there PM tasks I can do on my shift?</div>
+              </li>
+              <li class="list-group-item ">
+                <span class="pull-left checkbox glyphicon glyphicon-one-fine-empty-dot" data-task="task6"></span>
+                <div class="pull-left text">Have I planned the breaks for the shift?</div>
+              </li>
+              <li class="list-group-item ">
+                <span class="pull-left checkbox glyphicon glyphicon-one-fine-empty-dot" data-task="task7"></span>
+                <div class="pull-left text">Have I set targets for my shift?</div>
+              </li>
+              <li class="list-group-item ">
+                <span class="pull-left checkbox glyphicon glyphicon-one-fine-empty-dot" data-task="task8"></span>
+                <div class="pull-left text">Have I reviewed the training schedule and planned the training on my shift?</div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="panel panel-default green">
+          <div class="panel-heading" role="tab" id="headingTwo">
+            <h4 class="panel-title">
+              <a class="collapsed" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                During My Shift
+              </a>
+            </h4>
+          </div>
+          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <ul class="list-group resize">
+              <li class="list-group-item ">
+                <span class="pull-left checkbox glyphicon glyphicon-one-fine-empty-dot" data-task="task9"></span>
+                <div class="pull-left text">Am I coaching my employees on proper procedures?</div>
+              </li>
+              <li class="list-group-item ">
+                <span class="pull-left checkbox glyphicon glyphicon-one-fine-empty-dot" data-task="task10"></span>
+                <div class="pull-left text">Am I motivating my crew?</div>
+              </li>
+              <li class="list-group-item ">
+                <span class="pull-left checkbox glyphicon glyphicon-one-fine-empty-dot" data-task="task11"></span>
+                <div class="pull-left text">Am I giving positive recognition and feedback?</div>
+              </li>
+              <li class="list-group-item ">
+                <span class="pull-left checkbox glyphicon glyphicon-one-fine-empty-dot" data-task="task12"></span>
+                <div class="pull-left text">Am I maintaining proper positioning throughout my shift?</div>
+              </li>
+              <li class="list-group-item ">
+                <span class="pull-left checkbox glyphicon glyphicon-one-fine-empty-dot" data-task="task13"></span>
+                <div class="pull-left text">Is the training of new employees conducted properly?</div>
+              </li>
+              <li class="list-group-item ">
+                <span class="pull-left checkbox glyphicon glyphicon-one-fine-empty-dot" data-task="task14"></span>
+                <div class="pull-left text">Have I planned the breaks for my employees?</div>
+              </li>
+              <li class="list-group-item ">
+                <span class="pull-left checkbox glyphicon glyphicon-one-fine-empty-dot" data-task="task15"></span>
+                <div class="pull-left text">Have I verified that there are no breaks scheduled during lunch?</div>
+              </li>
+              <li class="list-group-item ">
+                <span class="pull-left checkbox glyphicon glyphicon-one-fine-empty-dot" data-task="task16"></span>
+                <div class="pull-left text">Am I talking to our guests?</div>
+              </li>
+              <li class="list-group-item ">
+                <span class="pull-left checkbox glyphicon glyphicon-one-fine-empty-dot" data-task="task17"></span>
+                <div class="pull-left text">How are my special cleaning tasks going?</div>
+              </li>
+              <li class="list-group-item ">
+                <span class="pull-left checkbox glyphicon glyphicon-one-fine-empty-dot" data-task="task18"></span>
+                <div class="pull-left text">What do I need to do to accomplish my targets?</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="panel panel-default panel-last purple">
+          <div class="panel-heading" role="tab" id="headingThree">
+            <h4 class="panel-title">
+              <a class="collapsed" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Post Shift
+              </a>
+            </h4>
+          </div>
+          <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+            <ul class="list-group resize">
+              <li class="list-group-item ">
+                <span class="pull-left checkbox glyphicon glyphicon-one-fine-empty-dot" data-task="task19"></span>
+                <div class="pull-left text">How did we do today?</div>
+              </li>
+              <li class="list-group-item ">
+                <span class="pull-left checkbox glyphicon glyphicon-one-fine-empty-dot" data-task="task20"></span>
+                <div class="pull-left text">Did I process with a senior manager or my crew after the rush?</div>
+              </li>
+              <li class="list-group-item ">
+                <span class="pull-left checkbox glyphicon glyphicon-one-fine-empty-dot" data-task="task21"></span>
+                <div class="pull-left text">What can I do to make it better tomorrow?</div>
+              </li>
+              <li class="list-group-item ">
+                <span class="pull-left checkbox glyphicon glyphicon-one-fine-empty-dot" data-task="task22"></span>
+                <div class="pull-left text">Was the training on my shift done at a high level?</div>
+              </li>
+              <li class="list-group-item ">
+                <span class="pull-left checkbox glyphicon glyphicon-one-fine-empty-dot" data-task="task23"></span>
+                <div class="pull-left text">Have we prepared the restaurant (people, equipment and product) for the next shift the way we would want it prepared?</div>
+              </li>
+              <li class="list-group-item ">
+                <span class="pull-left checkbox glyphicon glyphicon-one-fine-empty-dot" data-task="task24"></span>
+                <div class="pull-left text">What could I do differently to improve the outcome of my shift?</div>
+              </li>
+              <li class="list-group-item ">
+                <span class="pull-left checkbox glyphicon glyphicon-one-fine-empty-dot" data-task="task25"></span>
+                <div class="pull-left text">Did we accomplish our targets?</div>
+              </li>
+              <li class="list-group-item ">
+                <span class="pull-left checkbox glyphicon glyphicon-one-fine-empty-dot" data-task="task26"></span>
+                <div class="pull-left text">Did we complete the special cleaning and PM tasks?</div>
+              </li>
+              <li class="list-group-item ">
+                <span class="pull-left checkbox glyphicon glyphicon-one-fine-empty-dot" data-task="task27"></span>
+                <div class="pull-left text">Did I add uncompleted special cleaning and PM tasks to the next shift?</div>
+              </li>
+              <li class="list-group-item ">
+                <span class="pull-left checkbox glyphicon glyphicon-one-fine-empty-dot" data-task="task28"></span>
+                <div class="pull-left text">Have I communicated important information in the manager's log or by phone?</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <!--
+    <div id="more">
+      <div id="moreHeader">
+        <div id="back" class="pull-left">
+          <span class="glyphicon glyphicon-chevron-left"></span>Back
+        </div>
+      </div>
+      <div id="moreBody">
+      <div class="container-fluid">
+          <h3>
+            Pre-Shift Checklist
+          </h3>
+          <ol>
+            <li>
+              Task #1
+              <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+            </li>
+            <li>Task #2
+              <p>Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.</p>
+            </li>
+            <li>Task #3
+              <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+            </li>
+            <li>Task #4
+              <p>Completely synergize resource sucking relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
+            </li>
+            <li>Task #5
+              <p>Objectively innovate empowered manufactured products whereas parallel platforms. Holisticly predominate extensible testing procedures for reliable supply chains. Dramatically engage top-line web services vis-a-vis cutting-edge deliverables.</p>
+            </li>
+            <li>Task #6
+              <p>Proactively envisioned multimedia based expertise and cross-media growth strategies. Seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing. Holistically pontificate installed base portals after maintainable products</p>
+            </li>
+            <li>Task #7
+              <p>Phosfluorescently engage worldwide methodologies with web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking. Completely pursue scalable customer service through sustainable potentialities.</p>
+            </li>
+            <li>Task #8
+              <p>Credibly innovate granular internal or "organic" sources whereas high standards in web-readiness. Energistically scale future-proof core competencies vis-a-vis impactful experiences. Dramatically synthesize integrated schemas with optimal networks.</p>
+            </li>
+            <li>Task #9
+              <p>Interactively procrastinate high-payoff content without backward-compatible data. Quickly cultivate optimal processes and tactical architectures. Completely iterate covalent strategic theme areas via accurate e-markets.</p>
+            </li>
+            <li>Task #10
+              <p>Globally incubate standards compliant channels before scalable benefits. Quickly disseminate superior deliverables whereas web-enabled applications. Quickly drive clicks-and-mortar catalysts for change before vertical architectures.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    --> 
+  </div>
+
+<script type="text/javascript">
+
+
+
+
+
+checklist = function() {
+
+  var songs = {
+      "songs": {
+                "Have I completed my pre-shift checklist?": {
+                    "completed": false
+                },
+                "Has anyone called in sick?": {
+                    "completed": false
+                },
+                "Is there enough stock to last through my shift?": {
+                    "completed": false
+                },
+                "Have I assigned the cleaning task for my shift?": {
+                    "completed": false
+                },
+                "Are there PM tasks I can do on my shift?": {
+                    "completed": false
+                },
+                "Have I planned the breaks for the shift?": {
+                    "completed": false
+                },
+                "Have I set targets for my shift?": {
+                    "completed": false
+                },
+                "Have I reviewed the training schedule and planned the training on my shift?": {
+                    "completed": false
+                },
+                 "Am I coaching my employees on proper procedures?": {
+                    "completed": false
+                },
+                "Am I motivating my crew?": {
+                    "completed": false
+                },
+                "Am I giving positive recognition and feedback?": {
+                    "completed": false
+                },
+                "Am I maintaining proper positioning throughout my shift?": {
+                    "completed": false
+                },
+                "Is the training of new employees conducted properly?": {
+                    "completed": false
+                },
+                "Have I planned the breaks for my employees?": {
+                    "completed": false
+                },
+                "Have I verified that there are no breaks scheduled during lunch?": {
+                    "completed": false
+                },
+                "Am I talking to our guests?": {
+                    "completed": false
+                },
+                "How are my special cleaning tasks going?": {
+                    "completed": false
+                },
+                "What do I need to do to accomplish my targets?": {
+                    "completed": false
+                },
+                "How did we do today?": {
+                    "completed": false
+                },
+                "Did I process with a senior manager or my crew after the rush?": {
+                    "completed": false
+                },
+                "What can I do to make it better tomorrow?": {
+                    "completed": false
+                },
+                "Was the training on my shift done at a high level?": {
+                    "completed": false
+                },
+                "Have we prepared the restaurant (people, equipment and product) for the next shift the way we would want it prepared?": {
+                    "completed": false
+                },
+                "What could I do differently to improve the outcome of my shift?": {
+                    "completed": false
+                },
+                "Did we accomplish our targets?": {
+                    "completed": false
+                },
+                "Did we complete the special cleaning and PM tasks?": {
+                    "completed": false
+                },
+                "Did I add uncompleted special cleaning and PM tasks to the next shift?": {
+                    "completed": false
+                },
+                "Have I communicated important information in the manager's log or by phone?": {
+                    "completed": false
+                },
+            }
+  };
+  return songs;
+}
+
+
+$(function(){
+    var winHeight, winWidth, hero, panels, totalHeight, $more, json, uid, parseId;
+
+
+    winHeight = $(window).height();
+    winWidth  = $(window).width();
+    hero      = $('.hero').height();
+    $more     = $('#more');
+    json      = checklist();
+    uid       = window.location.href.split('uid=')[1];
+
+    var date = function() {
+      var obj = new Date();
+      var m   = ('0' + (obj.getMonth() + 1)).slice(-2);
+      var y   = obj.getFullYear();
+      var d   = obj.getDate();
+      var h   = obj.getHours();
+          h   = h+1;
+      var min = obj.getMinutes();
+      var s   = obj.getSeconds();
+      // return m + '/' + d + '/' + y;
+      return y + '/' + m + '/' + d;
+    };
+
+    
+
+    sizePanels = function() {
+      panels = 0;
+      $('.panel-heading').each(function() {
+        var count; 
+        count = $(this).innerHeight();
+        panels = count + panels
+      });
+
+      totalHeight = winHeight - (hero + panels) - 30;
+
+      $('.resize').height(function() {
+        $(this).height(totalHeight);
+      });
+      $('#accordion').height(function() {
+        // var h = $(this).height();
+        $(this).height(winHeight - hero - 30)
+      });
+      $('.header').height(winHeight+30);
+    };
+
+    positionReadMore = function() {
+      $more.offset({top: 0, left: winWidth});
+    };
+
+    sendData = function() { 
+      // console.log('sendData');
+      // if  (undefined === uid) {
+      //   alert('User ID must be specified');
+      //   return false;
+      // }
+      userSubmission.set("date", new Date(date()));
+      userSubmission.set("song", json);
+      userSubmission.save();
+    };
+
+    sendDataSong = function() { 
+      // console.log('sendData');
+      // if  (undefined === uid) {
+      //   alert('User ID must be specified');
+      //   return false;
+      // }
+      songSubmission.set("date", new Date(date()));
+      songSubmission.set("song", json);
+      songSubmission.set("uid", 'L6MYvFPY7P');
+      songSubmission.set("geoLatLong", '32.742022, -117.110353');
+      songSubmission.set("geoTag", '#sandiego');
+      songSubmission.save();
+    };
+
+    setData = function() {
+      // console.log('setData');
+      userSubmission.set("objectId", parseId);
+
+      $('li.list-group-item .text').each( function() {
+        var text = $(this).text();
+        var $this = $(this).prev();
+        $.each(json.tasks , function (i,v) {
+          if (i === text && v.completed === true) {
+            $this.removeClass('glyphicon-one-fine-empty-dot').addClass('glyphicon-ok-sign');
+          }
+        });
+      });
+    }
+
+    // does a query to see if the UID and date are already saved in an entry
+    getData = function() {
+      var d;
+
+      // user ID
+      query.equalTo("guid", uid);
+      // todays date
+      query.equalTo("date", new Date(date()));
+
+      query.find({
+        success: function(results) {
+          // Do something with the returned Parse.Object values
+          
+          if (results.length > 0) {
+            parseId       = results[0].id;
+            json          = results[0].attributes.tasks;
+            // json          = userSubmission.get("tasks");
+            d             = 1;
+            // console.log(results[0]);
+            // console.log(parseId);
+            // console.log(results[0].attributes.tasks);
+          } else {
+            d = 0;
+          }
+          // routes the info to either create a new db entry or
+          // updates the UI to show which have been checked
+          // case 1: guid & date = true
+          // default: make new entry
+          switch(d) {
+            case 1:
+              setData();
+              break;
+            default:
+              sendData();
+              break;
+          }
+        },
+        error: function(error) {
+          // alert("Error: " + error.code + " " + error.message);
+        }
+      });
+
+    };
+
+    
+
+    $('span.checkbox').on('click touch', function(e) {
+      e.preventDefault();
+      var task = $(this).attr('data-task');
+      var key  = $(this).next().text();
+
+      if  (undefined === uid) {
+        alert('User ID must be specified');
+        return false;
+      }
+
+      if ($(this).hasClass('glyphicon-one-fine-empty-dot')) {
+        $(this).removeClass('glyphicon-one-fine-empty-dot').addClass('glyphicon-ok-sign');
+
+        $.each(json.tasks, function (i,v) {
+          if (i === key) {
+            json.tasks[i].completed = true;
+            json.tasks[i].timestamp = new Date().getTime();
+            userSubmission.set("tasks", json);
+            userSubmission.save(null, {
+              success: function(userSubmission) {
+                // alert('saved');
+                // parseId = userSubmission.id
+                // Execute any logic that should take place after the object is saved.
+                // alert('New object created with objectId: ' + parseId);
+              },
+              error: function(userSubmission, error) {
+                alert('error');
+                // Execute any logic that should take place if the save fails.
+                // error is a Parse.Error with an error code and message.
+                alert('Failed to create new object, with error code: ' + error.message);
+              }
+            });
+          }
+        });
+      } else {
+        $(this).addClass('glyphicon-one-fine-empty-dot').removeClass('glyphicon-ok-sign');
+        $.each(json.tasks, function (i,v) {
+          if (i === key) {
+            json.tasks[i].completed = false;
+            delete json.tasks[i].timestamp;
+
+            userSubmission.save(null, {
+              success: function(userSubmission) {
+                parseId = userSubmission.id
+                // Execute any logic that should take place after the object is saved.
+                // alert('Deleted entry for objectId: ' + parseId);
+              },
+              error: function(userSubmission, error) {
+                // Execute any logic that should take place if the save fails.
+                // error is a Parse.Error with an error code and message.
+                alert('Failed to create new object, with error code: ' + error.message);
+              }
+            });
+
+          }
+        });
+      }
+    });
+
+    $('.readMore span').on('click touch', function(e) {
+      // alert('yes');
+      e.preventDefault();
+      $more.animate({
+        left: "-="+winWidth
+      }, 500, 'swing', function() {
+        // Animation complete.
+      });
+      $('.header').animate({left: "-=50"}, 500, 'swing');
+    });
+
+    $('#back').on('click touch', function(e) {
+      // alert('yes');
+      e.preventDefault();
+      $more.animate({
+        left: "+="+winWidth
+      }, 500, 'swing', function() {
+        // Animation complete.
+      });
+      $('.header').animate({left: "+=50"}, 500, 'swing');
+    });
+
+
+    $('.panel-heading').on('click touch', function (e) {
+      e.preventDefault();
+      var $next, open;
+      $next = $(this).next();
+      if ($next.hasClass('in')) {
+        return false;
+      }
+      $('.panel-collapse.in').collapse('toggle');
+      $next.collapse('toggle');
+    });
+
+    sizePanels();
+    positionReadMore();
+
+    // if  (uid) {
+    //     getData();
+    // }
+    
+
+    sendDataSong();
+
+});
+</script>
+
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+         })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+         ga('create', 'UA-57810632-1', 'auto');
+         ga('send', 'pageview');
+  </script>
+
+  <script type="text/javascript">
+      // Create the object.
+      // Geo Music
+      Parse.initialize("tBhWa1RhRiauqxC70SCu2lMavzAEcok8HnAy1W2j", "Zs86sjHw67XKTe1k3ll9lX0pLUVchRYG0WxF4AC3");
+      // Piper app key
+      // Parse.initialize("gHUXLJHR46KogO3jtVCRWqEUPDix1cZnQMeXxh18", "qyS0BeoTzUmQbMRjMLT9jtKkHJzxOay9BQOqpvQM");
+      // MCD PQRG
+      // Parse.initialize("cVYkdAncgsUIUYbrO3xZgq3V9uHomvuEFXbsCTmY", "TYSCAoVjgZK2omGJPSpzLzxXZTi4ukgWBn2YgtAX");
+
+
+      var Users           = Parse.Object.extend("Users");
+      var userSubmission  = new Users();
+      var query           = new Parse.Query(Users);
+
+      var Music           = Parse.Object.extend("Music");
+      var songSubmission  = new Music();
+      var queryMusic      = new Parse.Query(Music);
+
+      // var myId;
+
+      // var testme =  {"04/21/2015": [{"task1": true,"timestamp": ""},{"task2": false}]};
+
+      // query.equalTo("guid", "B3683B87-CE71-30A9-9455-72FD6FE48271");
+      // query.find({
+      //   success: function(results) {
+      //     alert("Successfully retrieved " + results.length + " scores.");
+      //     // Do something with the returned Parse.Object values
+      //     for (var i = 0; i < results.length; i++) { 
+      //       var object = results[i];
+      //       myid = object.id;
+      //       alert( myid + ' - ' + object.get('PreShift'));
+      //     }
+      //   },
+      //   error: function(error) {
+      //     alert("Error: " + error.code + " " + error.message);
+      //   }
+      // });
+
+      // var userSubmission = new McdPqrg();
+      // userSubmission.save("cHJLlP5ac5", {
+      //   "dates" : {"04/21/2015": [{"task1": true,"timestamp": ""},{"task2": false}]}
+      // },{
+      //   success: function(gameScore) {
+      //     // Execute any logic that should take place after the object is saved.
+      //     alert('New object created with objectId: ' + userSubmission.id);
+      //   },
+      //   error: function(gameScore, error) {
+      //     // Execute any logic that should take place if the save fails.
+      //     // error is a Parse.Error with an error code and message.
+      //     alert('Failed to create new object, with error code: ' + error.message);
+      //   }
+      // });
+
+      // var userSubmission = new McdPqrg();
+       
+      // userSubmission.set("guid", "B3683B87-CE71-30A9-9455-72FD6FE48271");
+      // // userSubmission.set("playerName", "Sean Plott");
+      // // userSubmission.set("cheatMode", false);
+      // // userSubmission.set("submissions", ["pwnage", "flying"]);
+      // userSubmission.set("PreShift", ["task1","task2","task3"]);
+      // userSubmission.set("DuringShift", ["task1","task2","task3"]);
+      
+
+      // userSubmission.save(null, {
+      //   success: function(gameScore) {
+      //     // Execute any logic that should take place after the object is saved.
+      //     alert('New object created with objectId: ' + userSubmission.id);
+      //   },
+      //   error: function(gameScore, error) {
+      //     // Execute any logic that should take place if the save fails.
+      //     // error is a Parse.Error with an error code and message.
+      //     alert('Failed to create new object, with error code: ' + error.message);
+      //   }
+      // });
+
+      
+      // gameScore.save(null, {
+      //   success: function(gameScore) {
+      //     // Now let's update it with some new data. In this case, only cheatMode and score
+      //     // will get sent to the cloud. playerName hasn't changed.
+      //     gameScore.set("cheatMode", true);
+      //     gameScore.set("score", 1338);
+      //     gameScore.save();
+      //   }
+      // });
+
+    </script>
+
+
+  </body>
+</html>
