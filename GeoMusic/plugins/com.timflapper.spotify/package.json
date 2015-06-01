@@ -1,0 +1,21 @@
+{
+    "version": "0.1.0",
+    "name": "com.timflapper.spotify",
+    "cordova_name": "Spotify Cordova Plugin",
+    "description": "This plugin provides a JavaScript API for Spotify's iOS SDK.",
+    "license": "MIT",
+    "repo": "https://github.com/timflapper/cordova-spotify-plugin",
+    "issue": "https://github.com/timflapper/cordova-spotify-plugin/issues",
+    "keywords": [
+        "spotify"
+    ],
+    "platforms": [
+        "ios"
+    ],
+    "engines": [
+        {
+            "name": "cordova",
+            "version": ">=3.7.0"
+        }
+    ]
+}
